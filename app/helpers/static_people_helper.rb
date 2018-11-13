@@ -1,0 +1,2 @@
+module StaticPeopleHelper
+end

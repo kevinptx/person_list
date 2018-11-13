@@ -1,0 +1,2 @@
+class StaticPeopleController < ApplicationController
+end
