@@ -1,8 +1,15 @@
+<%= stylesheet_link_tag "application.css" %>
+<div class="people-page">
 <h1>People Page</h1>
 <p><%=link_to "New Person", new_person_path%></p>
+</div>
+<div class="person-container">
 <%@people.each do |person|%>
+<div class="person">
 <h2><%=person.full_name%></h2>
 <%= link_to 'Edit', edit_person_path(person) %>
 <%= link_to 'Delete', person_path(person), method: :delete %>
 <%= link_to 'Details', person_path(person) %>
+</div>
 <%end%>
+</div>

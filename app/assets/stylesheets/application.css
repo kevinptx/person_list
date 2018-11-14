@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+.person-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.person {
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 5px;
+  background: yellow;
+  height: 300px;
+  width: 200px;
+}
+
+.people-page {
+  margin: 20px;
+  padding: 5px;
+}
