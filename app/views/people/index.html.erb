@@ -7,9 +7,11 @@
 <%@people.each do |person|%>
 <div class="person">
 <h2><%=person.full_name%></h2>
+<div class="links">
 <%= link_to 'Edit', edit_person_path(person) %>
 <%= link_to 'Delete', person_path(person), method: :delete %>
 <%= link_to 'Details', person_path(person) %>
+</div>
 </div>
 <%end%>
 </div>
