@@ -1,15 +1,23 @@
 <%= form_with model: @person do |f|%>
 <p>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
 </p>
 <p>
-  <%= f.label :hometown %>
-  <%= f.text_field :hometown %>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
 </p>
 <p>
-  <%= f.label :birthday %>
-  <%= f.date_field :birthday %>
+  <%= f.label :eye_color %>
+  <%= f.text_field :eye_color %>
+</p>
+<p>
+  <%= f.label :gender %>
+  <%= f.text_field :gender %>
+</p>
+<p>
+  <%= f.label :alive %>
+  <%= f.check_box :alive, {}, true, false %>
 </p>
   <%= f.submit %>
 <% end %>

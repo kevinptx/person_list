@@ -16,7 +16,8 @@ ActiveRecord::Schema.define(version: 2018_11_13_210223) do
   enable_extension "plpgsql"
 
   create_table "people", force: :cascade do |t|
-    t.string "name"
+    t.string "first_name"
+    t.string "last_name"
     t.integer "age"
     t.string "eye_color"
     t.string "gender"
@@ -24,5 +25,4 @@ ActiveRecord::Schema.define(version: 2018_11_13_210223) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
 end

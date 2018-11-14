@@ -1,6 +1,6 @@
 class PeopleController < ApplicationController
   def index
-    @people = Person.all
+    @people = Person.all.by_last_name
   end
 
   def show
@@ -50,6 +50,6 @@ class PeopleController < ApplicationController
 
   #strong params:
   def person_params
-    params.require(:person).permit(:name, :age, :hair_color, :eye_color, :gender, :alive)
+    params.require(:person).permit(:first_name, :last_name, :age, :hair_color, :eye_color, :gender, :alive)
   end
 end
